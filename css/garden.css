@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    /* background-image: url('../img/image.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background: linear-gradient(135deg, lightyellow, yellowgreen);
+}
+
+.garden_create_form {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.garden_create_form select {
+    margin-right: 10px;
+    width: 100px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.garden_create_form button {
+    width: 70px;
+    font-size: 16px;
+    padding: 7px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.garden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.growth_rate {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.growth_rate span {
+    color: blue;
+}

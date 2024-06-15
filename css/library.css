@@ -1,0 +1,21 @@
+body {
+    /* background: linear-gradient(-45deg, skyblue, lightyellow); */
+    background-image: url('../img/library.jpg');
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.logout_btn {
+    color: white;
+}
+
+.bgm {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+}

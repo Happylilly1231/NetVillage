@@ -1,0 +1,188 @@
+@keyframes slidein {
+    from {
+        transform: translateX(-3%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+body {
+    height: 100%;
+}
+
+.todo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo_and_btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.to_do_list {
+    animation-duration: 1s;
+    animation-name: slidein;
+
+    width: 300px;
+    height: 400px;
+    border-radius: 7px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.5);
+}
+
+.todo_item {
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label {
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #9acd32;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked+label:before {
+    content: "";
+    background-color: yellowgreen;
+    border-color: yellowgreen;
+    background-image: url('../img/check.png');
+    background-repeat: no-repeat;
+}
+
+.todo_content {
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+textarea:focus {
+    outline: 2px solid rgba(128, 128, 128, 0.5);
+}
+
+.create_textarea {
+    width: 350px;
+}
+
+.modify_textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.todo_part {
+    display: flex;
+}
+
+.btn_part {
+    display: flex;
+    justify-content: end;
+}
+
+.modify_btn,
+.delete_btn {
+    width: 24px;
+    height: 24px;
+    color: white;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.delete_btn {
+    background-color: crimson;
+}
+
+.modify_btn i,
+.delete_btn i {
+    vertical-align: middle;
+}
+
+.move_date_btn {
+    background: none;
+    border-radius: 10px;
+    border: none;
+    margin: 20px;
+    opacity: 50%;
+}
+
+.move_date_btn:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.move_date_btn img {
+    width: 150px;
+    padding: 10px;
+}
+
+.create_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.create_form button {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 7px;
+    color: white;
+    background-color: rgb(255, 144, 144);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.today_btn {
+    width: 70px;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 7px;
+    color: white;
+    background-color: rgb(255, 144, 144);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 10px;
+}

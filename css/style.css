@@ -1,0 +1,22 @@
+#chat-box {
+    border: 1px solid #000;
+    height: 300px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-chat {
+    color: blue;
+    align-self: end;
+    padding: 10px 10px 10px 13px;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+
+.other-chat {
+    align-self: flex-start;
+    padding: 10px 13px 10px 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+}

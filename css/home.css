@@ -1,0 +1,76 @@
+.all_container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    justify-items: center;
+}
+
+h2 {
+    margin: 20px;
+    text-align: center;
+}
+
+.window {
+    width: 100%;
+    text-align: center;
+}
+
+.window img {
+    width: 100%;
+}
+
+/* to_do_list */
+.to_do_list {
+    width: 300px;
+    height: 400px;
+    border-radius: 7px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.todo_item {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.5);
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.todo_part {
+    display: flex;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label {
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #9acd32;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked+label:before {
+    content: "";
+    background-color: yellowgreen;
+    border-color: yellowgreen;
+    background-image: url('../img/check.png');
+    background-repeat: no-repeat;
+}
+
+.todo_content {
+    margin-bottom: 10px;
+}

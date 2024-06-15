@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, pink, lightyellow);
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.bottom_nav_btn {
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px;
+    color: black;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottom_nav_btn:hover {
+    color: crimson;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.current_place {
+    display: flex;
+    align-items: center;
+}
+
+.current_place img {
+    margin-right: 5px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile_text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.logout_btn {
+    border: 1px solid lightgray;
+    background: none;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.logout_btn:hover {
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+.nickname {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.profile img {
+    border: 1px solid black;
+    border-radius: 50%;
+}
